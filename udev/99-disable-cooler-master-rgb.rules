@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="2516", ATTR{idProduct}=="0051", TAG+="systemd", ENV{SYSTEMD_WANTS}="disable-cooler-master-rgb.service"

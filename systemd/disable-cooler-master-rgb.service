@@ -1,0 +1,12 @@
+[Unit]
+Description=Disable Cooler Master RGB lighting
+After=systemd-udevd.service
+
+[Service]
+Type=oneshot
+ExecStart=/home/emilstahl/disable-cooler-master-rgb/disable-cooler-master-rgb.sh --apply-only
+TimeoutStartSec=90
+
+[Install]
+WantedBy=multi-user.target
+WantedBy=default.target
